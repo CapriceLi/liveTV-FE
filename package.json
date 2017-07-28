@@ -1,8 +1,8 @@
 {
   "name": "livetv-fe",
   "version": "1.0.0",
-  "description": "This is front-end of a live tv",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,21 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/CapriceLi/liveTV-FE.git"
   },
-  "keywords": [],
-  "dependencies": {
-    "angular": "1.5.7",
-    "gulp-load-plugins": "^1.5.0",
-    "jquery": "3.1.0"
-  },
-  "devDependencies": {
-    "ecstatic": "~0.5.4",
-    "gulp": "^3.8.7",
-    "http": "0.0.0"
-  },
   "author": "Caprice",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CapriceLi/liveTV-FE/issues"
   },
-  "homepage": "https://github.com/CapriceLi/liveTV-FE#readme"
+  "homepage": "https://github.com/CapriceLi/liveTV-FE#readme",
+  "devDependencies": {
+    "gulp-clean": "^0.3.2",
+    "gulp": "^3.8.7",
+    "http": "0.0.0",
+    "ecstatic": "~0.5.4"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "angular": "1.5.7"
+  }
 }
