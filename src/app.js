@@ -18,5 +18,8 @@ angular.module('mainapp', ['infinite-scroll', 'ui.router'])
             $scope.comments.push({ 'author': 'Jack', 'text': comment });
             $scope.comment = '';
         }
+        $scope.refreshComments=function(){
+        	console.log('log');
+        }
 
     }]);
