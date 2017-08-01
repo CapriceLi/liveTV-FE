@@ -1,14 +1,14 @@
 var gulp = require('gulp'),
-		gutil=require('gulp-util'),
-		http = require('http'),
-		ecstatic = require('ecstatic');
-$=require('gulp-load-plugins')();
+    gutil = require('gulp-util'),
+    ecstatic = require('ecstatic'),
+    webserver=require('gulp-webserver'),
+$ = require('gulp-load-plugins')();
 
-var now=new Date();
+var now = new Date();
 
 gulp.task('three', function() {
     console.log("Third job done.");
-     console.log($);
+    console.log($);
 });
 
 gulp.task('default', ['one', 'two', 'three'], function() {
@@ -27,9 +27,10 @@ gulp.task('two', function() {
 });
 
 gulp.task('server', function() {
-    http.createServer(ecstatic({
-        root: 'src',
-        cache: 0
-    })).listen(8080);
-    gutil.log(gutil.colors.blue('HTTP server listening on port 8080'));
+    gulp.src('')
+        .pipe(webserver({
+            livereload: true,
+            directoryListing: false,
+            open: true
+        }));
 });
