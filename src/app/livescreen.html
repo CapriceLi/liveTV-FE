@@ -1,6 +1,6 @@
 <div style="height:500px;width:888px;border:1px solid;float: left;">live</div>
-<div style="height:500px;width: 20%;border:1px solid;float: right;overflow: scroll; display: flex;flex-wrap: wrap-reverse;" class="container">
-    <div ng-repeat="comment in comments" style="width: 100%">
+<div id="scrollDiv" style="height:500px;width: 20%;border:1px solid;float: right;overflow: scroll;" class="container">
+    <div ng-repeat="comment in comments">
         <div ng-if="comment.gift">
             {{comment.author}}送出了{{comment.gift}}{{comments.length}}{{$index}}
             <br />

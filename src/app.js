@@ -17,6 +17,8 @@ angular.module('mainapp', ['infinite-scroll', 'ui.router'])
 
             $scope.comments.push({ 'author': 'Jack', 'text': comment });
             $scope.comment = '';
+            var scrollDiv = document.getElementById('scrollDiv');
+            scrollDiv.scrollTop = scrollDiv.scrollHeight;
         }
         $scope.refreshComments=function(){
         	console.log('log');
