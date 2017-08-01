@@ -7,23 +7,23 @@
     <script src="../node_modules/angular/angular.min.js"></script>
     <script src="../node_modules/ng-infinite-scroll/build/ng-infinite-scroll.min.js"></script>
     <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script> -->
     <script src="src/app.js"></script>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
 
 <body ng-app="mainapp">
     <div style="height:0; overflow: hidden;">
-      <!-- inject:svg --><!-- endinject -->
+        <!-- inject:svg -->
+        <!-- endinject -->
     </div>
     <div>
     </div>
     <div ui-view></div>
-    <hr/>
-Navigation:
-<ul>
-  <li><a ui-sref="livescreen">Home</a></li>
-
-    
+    <hr/> Navigation:
+    <ul>
+        <li><a ui-sref="livescreen">Home</a></li>
 </body>
