@@ -1,5 +1,5 @@
  <div style="height:500px;width:888px;border:1px solid;float: left;">live</div>
-        <div style="height:500px;width: 20%;border:1px solid;float: right;">
+        <div style="height:500px;width: 20%;border:1px solid;float: right;" class="container container-fluid">
             <div ng-repeat="comment in comments">
                 <div ng-if="comment.gift">
                     {{comment.author}}送出了{{comment.gift}}
@@ -15,5 +15,5 @@
         </div>
         <div style="width:888px;border:1px solid">
             <input type="text" style="width:80%" ng-model="comment"/>
-            <input type="button" value="发送" ng-click="sendComment(comment)" />
+            <input class="btn btn-info btn-sm" ng-click="sendComment()" value="发送"></div>
         </div>
