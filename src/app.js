@@ -4,12 +4,11 @@ angular.module('mainapp', ['infinite-scroll', 'ui.router'])
     	$stateProvider
     		.state('home',{
     			url:'/',
-    			template:'home',
-    			controller:function($scope){
-    				
+    			templateUrl:'src/app/livescreen.html',
+    			controller: 'mainController'
     			}
 
-    		})
+    		)
     }])
     .controller('mainController', ['$scope', function($scope) {
         $scope.comment = '';
