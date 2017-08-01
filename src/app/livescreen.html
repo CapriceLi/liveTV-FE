@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Caprice's test place</title>
-    <script src="../node_modules/angular/angular.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script> -->
-    <script src="index.js"></script>
-</head>
-
-<body>
-    <div ng-app="mainapp" ng-controller="mainController" style="padding:3%;">
-        <div style="height:500px;width:888px;border:1px solid;float: left;">live</div>
+ <div style="height:500px;width:888px;border:1px solid;float: left;">live</div>
         <div style="height:500px;width: 20%;border:1px solid;float: right;">
             <div ng-repeat="comment in comments">
                 <div ng-if="comment.gift">
@@ -30,5 +17,3 @@
             <input type="text" style="width:80%" ng-model="comment"/>
             <input type="button" value="发送" ng-click="sendComment(comment)" />
         </div>
-    </div>
-</body>
