@@ -1,19 +1,18 @@
- <div style="height:500px;width:888px;border:1px solid;float: left;">live</div>
-        <div style="height:500px;width: 20%;border:1px solid;float: right;overflow: scroll;">
-            <div ng-repeat="comment in comments">
-                <div ng-if="comment.gift">
-                    {{comment.author}}送出了{{comment.gift}}
-                    <br />
-                    <br />
-                </div>
-                <div ng-if="!comment.gift">
-                    {{comment.text}} --{{comment.author}}
-                    <br />
-                    <br />
-                </div>
-            </div>
+<div style="height:500px;width:888px;border:1px solid;float: left;">live</div>
+<div style="height:500px;width: 20%;border:1px solid;float: right;overflow: scroll; display: flex;flex-wrap: wrap-reverse;" class="container">
+    <div ng-repeat="comment in comments" style="width: 100%">
+        <div ng-if="comment.gift">
+            {{comment.author}}送出了{{comment.gift}}{{comments.length}}{{$index}}
+            <br />
         </div>
-        <div style="width:888px;border:1px solid">
-            <input type="text" style="width:80%" ng-model="comment"/>
-            <input class="btn btn-info btn-sm" ng-click="sendComment()" value="发送"></div>
+        <div ng-if="!comment.gift">
+            {{comment.text}} --{{comment.author}}
+            <br />
         </div>
+    </div>
+</div>
+<div style="width:888px;border:1px solid">
+    <input type="text" style="width:80%" ng-model="comment" />
+    <input class="btn btn-info btn-sm" ng-click="sendComment(comment)" value="发送">
+</div>
+</div>
