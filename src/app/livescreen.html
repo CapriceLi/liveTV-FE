@@ -2,11 +2,13 @@
 <div id="scrollDiv" style="height:500px;width: 20%;border:1px solid;float: right;overflow: scroll;" class="container">
     <div ng-repeat="comment in comments">
         <div ng-if="comment.gift">
-            {{comment.author}}送出了{{comment.gift}}{{comments.length}}{{$index}}
+            {{comment.author}}送出了{{comment.gift}}
+            <br />
             <br />
         </div>
         <div ng-if="!comment.gift">
             {{comment.text}} --{{comment.author}}
+            <br />
             <br />
         </div>
     </div>
